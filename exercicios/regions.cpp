@@ -51,7 +51,7 @@ int main(int argc, char **argv)
         }
     }
 
-    cv::imshow("Regioes invertidas", image);
+    cv::imshow("regioes", image);
     cv::waitKey(0);
 
     return 0;
