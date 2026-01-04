@@ -5,7 +5,7 @@ int main(int argc, char **argv)
 {
     cv::Mat image, realce;
     int width, height;
-    int nobjects;
+    int nobjects = 0;
 
     cv::Point p;
     image = cv::imread(argv[1], cv::IMREAD_GRAYSCALE);
@@ -28,21 +28,24 @@ int main(int argc, char **argv)
     {
         for (int j = 0; j < width; j++)
         {
-            // encontrado um pixel branco, anote a posicao e rotule o objeto
             if (image.at<uchar>(i, j) == 255)
             {
+                // achou um objeto
+                nobjects++;
                 p.y = i;
                 p.x = j;
-                nobjects++;
-                cv::floodFill(image, p, cv::Scalar(100 + nobjects));
+
+                // preenche o objeto com o contador
+                cv::floodFill(image, p, nobjects);
             }
+            // segue para procurar o proximo pixel branco
         }
     }
 
     cv::equalizeHist(image, realce);
     cv::imwrite("rotulada.png", image);
     cv::imwrite("rotulada_equalizada.png", realce);
-    std::cout << "Numero de objetos: " << nobjects << std::endl;
+    std::cout << "Numero de bolhas: " << nobjects << std::endl;
 
     return 1;
 }
