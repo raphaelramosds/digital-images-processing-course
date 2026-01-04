@@ -50,12 +50,12 @@ int main(int argc, char **argv)
     {
         for (int j = x1; j <= x2; j++)
         {
-            // Complementa a regiao de interesse
+            // Grava o complemento do pixel lido
             image.at<uchar>(i, j) = 255 - image.at<uchar>(i, j);
         }
     }
 
-    cv::imshow("Regioes invertidas", image);
+    cv::imshow("regioes invertidas", image);
     cv::waitKey(0);
 
     return 0;
