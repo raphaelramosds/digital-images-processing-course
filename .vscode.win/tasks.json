@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-all",
+            "type": "shell",
+            "command": "cd ${workspaceFolder} ; cmake -G Ninja -DCMAKE_BUILD_TYPE=Debug -B build ; cmake --build build",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build the detect/video-processor project"
+        },
+        {
+            "label": "clean-all",
+            "type": "shell",
+            "command": "rm -rf ${workspaceFolder}/build",
+            "detail": "Clean build artifacts"
+        }
+    ]
+}
