@@ -9,3 +9,5 @@ A seguir uma explicação sobre rotulagem de componentes conectados
 5. O `floodFill` pinta toda essa segunda forma com o valor 2.
 
 O processo se repete até que não haja mais pixels brancos (255) na imagem.
+
+Utilizamos uma equalização para perceber melhor os tons de cinza na imagem rotulada, visto que o olho humano não consegue distinguir muitos tons de cinza próximos, por exemplo, de 5 a 8.
