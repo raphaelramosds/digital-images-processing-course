@@ -5,7 +5,7 @@ int main(int, char**) {
     cv::Mat image;
     cv::Vec3b val; // alias para cv::Vec<unsigned char, 3> (vetor com tres entradas do tipo char nao sinalizado)
 
-    std::string bolhas_path = "C:/Users/Raphael/Documents/Processamento-Digital-Imagens-Curso/pixels/bolhas.png";
+    std::string bolhas_path = "bolhas.png";
 
     // Transformar figura em monocromatica: entradas de 1 byte que guardam tons de cinza
     image = cv::imread(bolhas_path, cv::IMREAD_GRAYSCALE);

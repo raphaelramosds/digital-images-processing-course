@@ -19,6 +19,42 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "Run pixels",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/pixels/pixels.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}/pixels",
+            "preLaunchTask": "build-all",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Run labeling",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/labeling/labeling.exe",
+            "args": [
+                "bolhas.png"
+            ],
+            "cwd": "${workspaceFolder}/labeling",
+            "preLaunchTask": "build-all",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for GDB",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }
