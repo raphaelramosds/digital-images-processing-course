@@ -1,39 +1,22 @@
 # Processamento Digital de Imagens
 
-## Compilação no Windows com MSYS2 UCRT
+Este repositório contém códigos e exemplos para o curso de Processamento Digital de Imagens ministrado por Agostinho Brito Junior.
 
-Instale o MSYS 2 (consulte https://www.mingw-w64.org/getting-started/msys2/)
+Você pode acompanhar este curso em [Introdução ao processamento digital de imagens com OpenCV](https://agostinhobritojr.github.io/tutorial/pdi/)
 
-Em seguida, dentro do MSYS2 UCRT CLI, instale os pacotes necessários
+Para informações de como compilar e debugar as implementações, consulte o arquivo [COMPILING.md](COMPILING.md)
 
-```bash
-pacman -Syu
+## Conteúdo
 
-pacman -S mingw-w64-ucrt-x86_64-cmake \
-    mingw-w64-ucrt-x86_64-ninja \ 
-    mingw-w64-ucrt-x86_64-gcc \
-    mingw-w64-ucrt-x86_64-opencv \
-    mingw-w64-ucrt-x86_64-gdb \
-    mingw-w64-ucrt-x86_64-qt6
-```
+- hello
+- labeling
+- pixels
 
-Não se esqueça de adicionar  (Path: C:\msys64\ucrt64\bin) ao seu PATH
+## Exercicios
 
-No Powershell, compile o projeto
+### Parte I
 
-```bash
-mkdir build && cd build
+#### Representação de Imagens - Capitulo 2
 
-cmake -G Ninja .. 
-
-cmake --build .
-```
-## Configurar debug no VSCode
-
-### Windows
-
-```bash
-mkdir .vscode
-
-cp .vscode.win .vscode
-```
+- regions.cpp
+- trocaregioes.cpp
