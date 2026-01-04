@@ -13,7 +13,8 @@ pacman -S mingw-w64-ucrt-x86_64-cmake \
     mingw-w64-ucrt-x86_64-ninja \ 
     mingw-w64-ucrt-x86_64-gcc \
     mingw-w64-ucrt-x86_64-opencv \
-    mingw-w64-ucrt-x86_64-gdb
+    mingw-w64-ucrt-x86_64-gdb \
+    mingw-w64-ucrt-x86_64-qt6
 ```
 
 Não se esqueça de adicionar  (Path: C:\msys64\ucrt64\bin) ao seu PATH
