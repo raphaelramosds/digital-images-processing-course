@@ -1,12 +1,6 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
-void printUsage()
-{
-    std::cout << "Uso: ./regions <imagem> <x1> <y1> <x2> <y2>\n";
-    std::cout << "Onde (x1, y1) e (x2, y2) definem o retangulo de interesse.\n";
-}
-
 int main(int argc, char **argv)
 {
     int width, height;
@@ -14,7 +8,8 @@ int main(int argc, char **argv)
 
     if (argc < 6)
     {
-        printUsage();
+        std::cout << "uso: ./regions <imagem> <x1> <y1> <x2> <y2>\n";
+        std::cout << "onde (x1, y1) e (x2, y2) definem o retangulo de interesse.\n";
         return -1;
     }
 
@@ -36,10 +31,11 @@ int main(int argc, char **argv)
     x2 = std::atoi(argv[4]);
     y2 = std::atoi(argv[5]);
 
-    if (x1 < 0 || x2 < 0) {
+    if (x1 < 0 || x2 < 0)
+    {
         std::cout << "coordenadas negativas\n";
     }
-    
+
     if (x2 >= width || y2 >= height || x1 >= width || y1 >= height)
     {
         std::cout << "coordenadas ultrapassam dimensoes da imagem\n";
