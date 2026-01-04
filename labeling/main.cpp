@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 
     if (!image.data)
     {
-        std::cout << "imagem nao carregou corretamente\n";
+        std::cout << "Imagem nao carregou corretamente\n";
         return (-1);
     }
 
@@ -23,22 +23,22 @@ int main(int argc, char **argv)
     p.x = 0;
     p.y = 0;
 
-    // busca objetos presentes
+    // Busca objetos presentes
     for (int i = 0; i < height; i++)
     {
         for (int j = 0; j < width; j++)
         {
             if (image.at<uchar>(i, j) == 255)
             {
-                // achou um objeto
+                // Achou um objeto
                 nobjects++;
                 p.y = i;
                 p.x = j;
 
-                // preenche o objeto com o contador
+                // Preenche o objeto com o contador
                 cv::floodFill(image, p, nobjects);
             }
-            // segue para procurar o proximo pixel branco
+            // Segue para procurar o proximo pixel branco
         }
     }
 

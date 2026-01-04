@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 
     if (argc < 6)
     {
-        std::cout << "uso: ./regions <imagem> <x1> <y1> <x2> <y2>\n";
+        std::cout << "Uso: ./regions <imagem> <x1> <y1> <x2> <y2>\n";
         std::cout << "onde (x1, y1) e (x2, y2) definem o retangulo de interesse.\n";
         return -1;
     }
@@ -17,14 +17,14 @@ int main(int argc, char **argv)
 
     if (!image.data)
     {
-        std::cout << "imagem nao carregou corretamente\n";
+        std::cout << "Imagem nao carregou corretamente\n";
         return -1;
     }
 
     width = image.cols;
     height = image.rows;
 
-    std::cout << "dimensoes da imagem: " << width << "x" << height << std::endl;
+    std::cout << "Dimensoes da imagem: " << width << "x" << height << std::endl;
 
     x1 = std::atoi(argv[2]);
     y1 = std::atoi(argv[3]);
@@ -33,12 +33,12 @@ int main(int argc, char **argv)
 
     if (x1 < 0 || x2 < 0)
     {
-        std::cout << "coordenadas negativas\n";
+        std::cout << "Coordenadas negativas\n";
     }
 
     if (x2 >= width || y2 >= height || x1 >= width || y1 >= height)
     {
-        std::cout << "coordenadas ultrapassam dimensoes da imagem\n";
+        std::cout << "Coordenadas ultrapassam dimensoes da imagem\n";
         return -1;
     }
 
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
         }
     }
 
-    cv::imshow("regioes invertidas", image);
+    cv::imshow("Regioes invertidas", image);
     cv::waitKey(0);
 
     return 0;

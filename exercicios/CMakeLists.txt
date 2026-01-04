@@ -14,4 +14,11 @@ add_executable(regions
 target_link_libraries(regions PRIVATE ${OpenCV_LIBS})
 set_target_properties(regions PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-install(TARGETS regions)
+# trocaregioes
+add_executable(trocaregioes
+  trocaregioes.cpp
+)
+target_link_libraries(trocaregioes PRIVATE ${OpenCV_LIBS})
+set_target_properties(trocaregioes PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+install(TARGETS regions trocaregioes)
