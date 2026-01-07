@@ -4,6 +4,8 @@
 
 build/
 
+*.avi
+*.mp4
 *.exe
 *.png
 !explicacao.png

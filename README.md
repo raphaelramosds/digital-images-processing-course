@@ -11,6 +11,7 @@ Para informações de como compilar e debugar as implementações, consulte o ar
 - hello
 - labeling
 - pixels
+- video
 
 ## Exercicios
 
