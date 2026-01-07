@@ -1,10 +1,11 @@
 # Processamento Digital de Imagens
 
-Este repositório contém códigos e exemplos para o curso de Processamento Digital de Imagens ministrado por Agostinho Brito Junior.
+Este repositório contém códigos e exemplos adaptados do curso Introdução ao processamento de imagens com OpenCV de Agostinho Brito. 
 
-Você pode acompanhar este curso em [Introdução ao processamento digital de imagens com OpenCV](https://agostinhobritojr.github.io/tutorial/pdi/)
+## Informações
 
-Para informações de como compilar e debugar as implementações, consulte o arquivo [COMPILING.md](COMPILING.md)
+- Você pode acompanhar este curso em [Introdução ao processamento digital de imagens com OpenCV](https://agostinhobritojr.github.io/tutorial/pdi/)
+- Para informações de como compilar e debugar as implementações, consulte o arquivo [COMPILING.md](COMPILING.md)
 
 ## Conteúdo
 
