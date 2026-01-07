@@ -11,8 +11,8 @@ A seguir os plot das matrizes de intensidade de pixels e dos gráficos de linhas
 
 | sementes1.png | sementes2.png |
 |-----------|-----------|
-| ![Sementes 1 Matrix](sementes1_matrix.png) | ![Sementes 2 Matrix](sementes2_matrix.png) |
-| ![Sementes 1 Line](sementes1_histeps.png) | ![Sementes 2 Line](sementes2_histeps.png) |
+| ![Sementes 1 Matrix](../img/sementes1_matrix.png) | ![Sementes 2 Matrix](../img/sementes2_matrix.png) |
+| ![Sementes 1 Line](../img/sementes1_histeps.png) | ![Sementes 2 Line](../img/sementes2_histeps.png) |
 
 
 Percebemos que a linha central de intensidade da imagem **sementes2.png** apresenta variações abaixo de 140 unidades por ter uma iluminação mais pobre, enquanto a linha central de intensidade da imagem **sementes1.png** apresenta variações que alcançam até 200 unidades, indicando uma iluminação mais forte.

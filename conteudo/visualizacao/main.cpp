@@ -22,7 +22,9 @@ int main(int argc, char **argv)
     cv::resize(image, image, Size(128, 128), 0, 0, INTER_LINEAR);
 
     // Escrever os valores de cada pixel da imagem em um arquivo texto
-    // Plote este arquivo no gnuplot com os comandos dos arquivos: plotar_matrix.plt e plotar_3d.plt
+    // Plote este arquivo no gnuplot com: 
+    // load 'plotar_matrix.plt'
+    // load 'plotar_3d.plt'
     file.open("image.txt");
     for (int j = 0; j < image.rows; j++)
     {
@@ -35,7 +37,8 @@ int main(int argc, char **argv)
     file.close();
 
     // Escrever os valores dos pixels centrais da imagem em um arquivo texto
-    // Plote este arquivo no gnuplot com o comando do arquivo: plotar_histeps.plt
+    // Plote este arquivo no gnuplot com:
+    // load 'plotar_histeps.plt'
     file.open("line.txt");
     for (int i = 0; i < image.cols; i++)
     {
