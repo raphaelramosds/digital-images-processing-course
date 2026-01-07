@@ -1,19 +1,32 @@
 # Processamento Digital de Imagens
 
-Este repositório contém códigos e exemplos adaptados do curso Introdução ao processamento de imagens com OpenCV de Agostinho Brito. 
+## Visão geral
 
-## Informações
-
-- Você pode acompanhar este curso em [Introdução ao processamento digital de imagens com OpenCV](https://agostinhobritojr.github.io/tutorial/pdi/)
-- Para informações de como compilar e debugar as implementações, consulte o arquivo [COMPILING.md](COMPILING.md)
+Boa parte dos códigos e recursos utilizados nesse repositório são adaptações do material presente no curso [**Introdução ao processamento de imagens com OpenCV de Agostinho Brito**](https://agostinhobritojr.github.io/tutorial/pdi/).
 
 ## Conteúdo
 
-- hello
-- labeling
-- pixels
-- video
-- visualizacao
+[![DOCS](https://img.shields.io/badge/DOCS-4B0082?style=flat-square&logo=read-the-docs&logoColor=white)](./COMPILING.md) **Instruções de compilação**
+- Guia passo a passo para compilar e debugar os códigos presentes nesse repositório no Windows
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/hello) **Hello, OpenCV**
+
+- Simples programa em C++ que carrega e exibe uma imagem utilizando a biblioteca OpenCV.
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/labeling) **Labeling**
+
+- Implementação do algoritmo de rotulagem de componentes conectados (labeling) em imagens binárias.
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/pixels) **Manipulando pixels em uma imagem**
+
+- Exemplos de como acessar e modificar os valores dos pixels em uma imagem
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/video) **Tratando arquivos de vídeo**
+
+- Exemplos de como capturar, processar e exibir frames de um vídeo utilizando OpenCV.
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/visualizacao) **Visualização de Imagens**
+- Exemplos de formas de visualização de uma imagem em tons de cinza utilizando: formato matricial, plot 3D e linha central
 
 ## Exercicios
 
