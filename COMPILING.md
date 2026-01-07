@@ -22,12 +22,13 @@ Não se esqueça de adicionar  (Path: C:\msys64\ucrt64\bin) ao seu PATH
 No Powershell, compile o projeto
 
 ```bash
-mkdir build && cd build
+mkdir -p build
 
-cmake -G Ninja .. 
+cmake -G Ninja -B build
 
-cmake --build .
+cmake --build build
 ```
+
 ## Configurar debug no VSCode
 
 ### Windows

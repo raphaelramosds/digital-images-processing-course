@@ -8,10 +8,11 @@ Para informações de como compilar e debugar as implementações, consulte o ar
 
 ## Conteúdo
 
-- hello.cpp
-- labeling.cpp
-- pixels.cpp
-- video.cpp
+- hello
+- labeling
+- pixels
+- video
+- visualizacao
 
 ## Exercicios
 
@@ -26,3 +27,8 @@ Para informações de como compilar e debugar as implementações, consulte o ar
 
 - video-tons-de-cinza.cpp
 - video-negativo.cpp
+
+
+### Visualização de Imagens - Capitulo 4
+
+- visualizacao

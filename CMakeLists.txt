@@ -36,4 +36,11 @@ add_executable(video
 target_link_libraries(video PRIVATE ${OpenCV_LIBS})
 set_target_properties(video PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/video")
 
-install(TARGETS hello labeling pixels video)
+# visualizacao
+add_executable(visualizacao
+  visualizacao/main.cpp
+)
+target_link_libraries(visualizacao PRIVATE ${OpenCV_LIBS})
+set_target_properties(visualizacao PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/visualizacao")
+
+install(TARGETS hello labeling pixels video visualizacao)
