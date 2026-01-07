@@ -28,4 +28,11 @@ add_executable(video-tons-cinza
 target_link_libraries(video-tons-cinza PRIVATE ${OpenCV_LIBS})
 set_target_properties(video-tons-cinza PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-install(TARGETS regions trocaregioes video-tons-cinza)
+# video-negativo
+add_executable(video-negativo
+  video-negativo.cpp
+)
+target_link_libraries(video-negativo PRIVATE ${OpenCV_LIBS})
+set_target_properties(video-negativo PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+install(TARGETS regions trocaregioes video-tons-cinza video-negativo)
