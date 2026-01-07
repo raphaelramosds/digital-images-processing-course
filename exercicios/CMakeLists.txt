@@ -21,4 +21,11 @@ add_executable(trocaregioes
 target_link_libraries(trocaregioes PRIVATE ${OpenCV_LIBS})
 set_target_properties(trocaregioes PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-install(TARGETS regions trocaregioes)
+# video-tons-cinza
+add_executable(video-tons-cinza
+  video-tons-cinza.cpp
+)
+target_link_libraries(video-tons-cinza PRIVATE ${OpenCV_LIBS})
+set_target_properties(video-tons-cinza PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+install(TARGETS regions trocaregioes video-tons-cinza)
