@@ -28,6 +28,11 @@ Boa parte dos códigos e recursos utilizados nesse repositório são adaptaçõe
 [![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/visualizacao) **Visualização de Imagens**
 - Exemplos de formas de visualização de uma imagem em tons de cinza utilizando: formato matricial, plot 3D e linha central
 
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/filestorage/) **Serialização de dados em ponto flutuante via FileStorage**
+
+- Exemplos de como salvar e carregar dados em ponto flutuante utilizando a classe FileStorage do OpenCV
+- Salvar e carregar imagens em formatos YAML e PNG
+
 ## Exercicios
 
 ### Parte I
@@ -42,7 +47,10 @@ Boa parte dos códigos e recursos utilizados nesse repositório são adaptaçõe
 - video-tons-de-cinza.cpp
 - video-negativo.cpp
 
-
 ### Visualização de Imagens - Capitulo 4
 
-- visualizacao
+- [visualizacao](./exercicios/visualizacao/README.md)
+
+### Serialização de dados em ponto flutuante via FileStorage - Capitulo 5
+
+- [filestorage-senoides](./exercicios/filestorage-senoides/README.md)

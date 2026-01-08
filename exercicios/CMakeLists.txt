@@ -35,4 +35,11 @@ add_executable(video-negativo
 target_link_libraries(video-negativo PRIVATE ${OpenCV_LIBS})
 set_target_properties(video-negativo PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-install(TARGETS regions trocaregioes video-tons-cinza video-negativo)
+# filestorage-senoide-horizontal
+add_executable(filestorage-senoides
+  filestorage-senoides/main.cpp
+)
+target_link_libraries(filestorage-senoides PRIVATE ${OpenCV_LIBS})
+set_target_properties(filestorage-senoides PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/filestorage-senoides)
+
+install(TARGETS regions trocaregioes video-tons-cinza video-negativo filestorage-senoides)

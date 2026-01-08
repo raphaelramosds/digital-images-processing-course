@@ -28,7 +28,7 @@ No Powershell, compile o projeto
 ```bash
 mkdir -p conteudo/build
 
-cmake -G Ninja -B conteudo/build
+cmake -G Ninja -B conteudo/build conteudo
 
 cmake --build conteudo/build
 ```
@@ -38,7 +38,7 @@ cmake --build conteudo/build
 ```bash
 mkdir -p exercicios/build
 
-cmake -G Ninja -B exercicios/build
+cmake -G Ninja -B exercicios/build exercicios
 
 cmake --build exercicios/build
 ```

@@ -43,4 +43,11 @@ add_executable(visualizacao
 target_link_libraries(visualizacao PRIVATE ${OpenCV_LIBS})
 set_target_properties(visualizacao PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/visualizacao")
 
-install(TARGETS hello labeling pixels video visualizacao)
+# filestorage
+add_executable(filestorage
+  filestorage/main.cpp
+)
+target_link_libraries(filestorage PRIVATE ${OpenCV_LIBS})
+set_target_properties(filestorage PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/filestorage")
+
+install(TARGETS hello labeling pixels video visualizacao filestorage)
