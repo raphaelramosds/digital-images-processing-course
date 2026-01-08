@@ -19,8 +19,6 @@ pacman -S mingw-w64-ucrt-x86_64-cmake \
 
 Não se esqueça de adicionar  (Path: C:\msys64\ucrt64\bin) ao seu PATH
 
-## Instruções de compilação
-
 ### Compilação do conteúdo
 
 No Powershell, compile o projeto
@@ -43,12 +41,18 @@ cmake -G Ninja -B exercicios/build exercicios
 cmake --build exercicios/build
 ```
 
-## Configurar debug no VSCode
-
-### Windows
+### Debug no VSCode
 
 ```bash
 mkdir -p .vscode
 
 cp .vscode.win/* .vscode
 ```
+
+## Linux
+
+...
+
+## MacOS
+
+...

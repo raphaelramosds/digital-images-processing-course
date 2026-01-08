@@ -6,7 +6,7 @@ Boa parte dos códigos e recursos utilizados nesse repositório são adaptaçõe
 
 [![DOCS](https://img.shields.io/badge/DOCS-4B0082?style=flat-square&logo=read-the-docs&logoColor=white)](./COMPILING.md) **Instruções 
 de compilação**
-- Guia passo a passo para compilar e debugar os códigos presentes nesse repositório no Windows
+- Guia passo a passo para compilar e debugar os códigos presentes nesse repositório no Windows, Linux e MacOS.
 
 ## Conteúdo
 
