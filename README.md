@@ -14,19 +14,19 @@ de compilação**
 
 #### Capítulo 1 - Conceitos iniciais
 
-[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/hello) **hello.cpp**
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/hello/main.cpp) **Hello, OpenCV**
 
 - Programa em OpenCV para carregar e exibir uma imagem
 - Introdução da classe Mat e principais funções de I/O
 
 #### Capítulo 2 - Manipulando pixels em uma imagem
 
-[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/pixels) **pixels.cpp**
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/pixels/main.cpp) **Descrição do programa pixels**
 
 - Acesso e manipulação direta dos pixels de uma imagem
 - Apresentação dos conceitos de canais de cor e representação em tons de cinza
 
-[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/labeling) **labeling.cpp**
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/labeling/main.cpp) **Descrição do programa labeling**
 
 - Aplicação do algoritmo de rotulagem para identificar e manipular regiões conectadas em imagens binárias
 
@@ -40,7 +40,7 @@ de compilação**
 
 #### Capítulo 3 - Tratando arquivos de vídeo
 
-[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/video) **video.cpp**
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/video/main.cpp) **Descrição do programa video**
 
 - Capturar e exibir quadros de um arquivo de vídeo
 
@@ -54,7 +54,7 @@ de compilação**
 
 #### Capítulo 4 - Visualização de Imagens
 
-[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/visualizacao) **visualizacao.cpp**
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/visualizacao/main.cpp) **Descrição do programa visualizacao**
 
 - Geração de arquivos de texto com matrizes de intensidade de pixels e gráficos de linhas centrais de intensidade
 - Utilização do gnuplot para visualização dos dados gerados
@@ -65,7 +65,7 @@ de compilação**
 
 #### Capítulo 5 - Serialização de dados em ponto flutuante via FileStorage
 
-[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/filestorage/) **filestorage.cpp**
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/filestorage/main.cpp) **Descrição do programa filestorage**
 
 - Exemplos de como salvar e carregar dados em ponto flutuante utilizando a classe FileStorage do OpenCV
 - Salvar e carregar imagens em formatos YAML e PNG
