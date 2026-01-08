@@ -75,3 +75,27 @@ de compilação**
 - Exercício para gerar e salvar um padrão de interferência utilizando senoides em diferentes direções
 - Visualizar o padrão salvo em um arquivo PNG
 - O padrão foi resultado da substração de duas senoides perpendiculares
+
+### Parte 2 - Processamento de Imagens Coloridas
+
+#### Capítulo 6 - Colorizando imagens cinzentas com mapas de cores (colormaps)
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/colormap/main.cpp) **Descrição do programa colormap**
+- O objetivo dessa lição é mostrar como colorizar imagens cinzentas usando mapas de cor, ou colormaps
+- Colormaps (ou Look-Up Tables - LUT) são tabelas de cores que mapeiam valores de intensidade de colormap para cores
+- O OpenCV oferece diversos colormaps pré-definidos, como JET, HOT, COOL, entre outros
+
+#### Capítulo 7 - Modelos de cor
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/modelos_cor/main.cpp) **Descrição do programa colorspace**
+
+- O objetivo dessa lição é apresentar modelos de cores e como podem ser usados para destacar aspectos em uma imagem
+- Este exemplo abre uma imagem colorida e decompõe seus canais em dois modelos distintos: RGB e HSV
+- Aprendemos como converter imagens entre diferentes espaços de cor, como RGB e HSV com a função `cv::cvtColor`e concatenar imagens horizontalmente para facilitar a comparação visual entre diferentes representações de cor, com a função `cv::hconcat`
+
+#### Capítulo 8 - Seleção de faixas de cores
+
+[![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/colorrange/main.cpp) **Descrição do programa colorrange**
+
+- O objetivo dessa lição é apresentar como selecionar pixels em uma imagem colorida que se situam em uma faixa de cores fornecida
+- Este exemplo abre uma imagem fornecida e permite ao usuário selecionar interativamente um retângulo onde haverá a seleção da faixa de cores

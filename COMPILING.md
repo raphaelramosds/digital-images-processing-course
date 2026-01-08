@@ -2,7 +2,7 @@
 
 ## Windows
 
-Instale o MSYS 2 (consulte https://www.mingw-w64.org/getting-started/msys2/)
+Instale o [CMake](https://cmake.org/download/) e o [MSYS 2](https://www.mingw-w64.org/getting-started/msys2/)
 
 Em seguida, dentro do MSYS2 UCRT CLI, instale os pacotes necessários
 
@@ -17,27 +17,31 @@ pacman -S mingw-w64-ucrt-x86_64-cmake \
     mingw-w64-ucrt-x86_64-qt6
 ```
 
-Não se esqueça de adicionar  (Path: C:\msys64\ucrt64\bin) ao seu PATH
+Não se esqueça de adicionar o camniho **C:\msys64\ucrt64\bin** ao seu PATH
 
-### Compilação do conteúdo
+### Compilação do conteúdo e dos exercícios
 
-No Powershell, compile o projeto
+Para compilar as implementações dos capítulos, execute os comandos abaixo no PowerShell
 
 ```bash
 mkdir -p conteudo/build
 
+# Buildar arquivos
 cmake -G Ninja -B conteudo/build conteudo
 
+# Gerar executaveis
 cmake --build conteudo/build
 ```
 
-### Compilação dos exercícios
+Para compilar os exercícios, execute os comandos abaixo no PowerShell
 
 ```bash
 mkdir -p exercicios/build
 
+# Buildar arquivos
 cmake -G Ninja -B exercicios/build exercicios
 
+# Gerar executaveis
 cmake --build exercicios/build
 ```
 

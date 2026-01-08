@@ -50,4 +50,25 @@ add_executable(filestorage
 target_link_libraries(filestorage PRIVATE ${OpenCV_LIBS})
 set_target_properties(filestorage PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/filestorage")
 
-install(TARGETS hello labeling pixels video visualizacao filestorage)
+# colormap
+add_executable(colormap
+  colormap/main.cpp
+)
+target_link_libraries(colormap PRIVATE ${OpenCV_LIBS})
+set_target_properties(colormap PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/colormap")
+
+# colorspace
+add_executable(colorspace
+  colorspace/main.cpp
+)
+target_link_libraries(colorspace PRIVATE ${OpenCV_LIBS})
+set_target_properties(colorspace PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/colorspace")
+
+# colorrange
+add_executable(colorrange
+  colorrange/main.cpp
+)
+target_link_libraries(colorrange PRIVATE ${OpenCV_LIBS})
+set_target_properties(colorrange PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/colorrange")
+
+install(TARGETS hello labeling pixels video visualizacao filestorage colormap colorspace colorrange)
