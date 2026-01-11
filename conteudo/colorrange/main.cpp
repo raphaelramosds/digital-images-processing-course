@@ -87,7 +87,7 @@ int main(int argc, const char **argv)
         char c = cv::waitKey(10);
         if (c == 27)
         {
-            // Sair do programa se a tecla 'ESC' for pressionada
+            // Sair do programa se a tecla ESC for pressionada
             break;
         }
         if (selectObject && selection.width > 0 && selection.height > 0)
