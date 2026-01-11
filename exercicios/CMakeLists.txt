@@ -42,4 +42,11 @@ add_executable(filestorage-senoides
 target_link_libraries(filestorage-senoides PRIVATE ${OpenCV_LIBS})
 set_target_properties(filestorage-senoides PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/filestorage-senoides)
 
-install(TARGETS regions trocaregioes video-tons-cinza video-negativo filestorage-senoides)
+# colormap
+add_executable(colormap
+  colormap.cpp
+)
+target_link_libraries(colormap PRIVATE ${OpenCV_LIBS})
+set_target_properties(colormap PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+install(TARGETS regions trocaregioes video-tons-cinza video-negativo filestorage-senoides colormap)

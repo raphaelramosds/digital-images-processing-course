@@ -82,8 +82,14 @@ de compilação**
 
 [![CXX](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=C%2B%2B&logoColor=white)](./conteudo/colormap/main.cpp) **Descrição do programa colormap**
 - O objetivo dessa lição é mostrar como colorizar imagens cinzentas usando mapas de cor, ou colormaps
-- Colormaps (ou Look-Up Tables - LUT) são tabelas de cores que mapeiam valores de intensidade de colormap para cores
+- Colormaps (ou Look-Up Tables - LUT) são tabelas de cores que mapeiam valores de intensidade (geralmente em tons de cinza) para cores específicas com mais de um canal (como RGB)
 - O OpenCV oferece diversos colormaps pré-definidos, como JET, HOT, COOL, entre outros
+
+[![Exercicio](https://img.shields.io/badge/Exercicio-yellow?style=flat-square)](./exercicios/colormap.cpp) **Testando colormaps do OpenCV e definindo seu próprio colormap**
+
+- Exercício para experimentar diferentes colormaps disponíveis no OpenCV
+- Definir um colormap customizado simples e aplicá-lo a uma imagem em tons de cinza
+- Definir um colormap customizado utilizando a função `cv::LUT` e aplicá-lo a uma imagem em tons de cinza
 
 #### Capítulo 7 - Modelos de cor
 
