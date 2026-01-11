@@ -105,3 +105,4 @@ de compilação**
 
 - O objetivo dessa lição é apresentar como selecionar pixels em uma imagem colorida que se situam em uma faixa de cores fornecida
 - Este exemplo abre uma imagem fornecida e permite ao usuário selecionar interativamente um retângulo onde haverá a seleção da faixa de cores
+- Ainda, são exploradas função que implementam a manipulação de eventos do mouse em uma janela com a função `cv::setMouseCallback`, a função `cv::Rect` para definir ROI (Região de Interesse) e a função `cv::inRange` para selecionar pixels dentro de uma faixa de cores específica

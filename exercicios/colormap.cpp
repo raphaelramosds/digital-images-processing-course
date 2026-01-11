@@ -29,7 +29,7 @@ void applySimpleColorMap(const cv::Mat &grayImage, cv::Mat &colorImage)
 }
 
 // Exemplo função de colormap customizado mapeando com cv::LUT
-// WONTFIX
+// WONTFIX: nao consegui fazer a LUT funcionar corretamente
 void applyLUTColorMap(const cv::Mat &grayImage, cv::Mat &colorImage)
 {
     if (grayImage.empty() || grayImage.type() != CV_8UC1)
