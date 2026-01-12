@@ -49,4 +49,11 @@ add_executable(colormap
 target_link_libraries(colormap PRIVATE ${OpenCV_LIBS})
 set_target_properties(colormap PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-install(TARGETS regions trocaregioes video-tons-cinza video-negativo filestorage-senoides colormap)
+# colorrange
+add_executable(colorrange
+  colorrange.cpp
+)
+target_link_libraries(colorrange PRIVATE ${OpenCV_LIBS})
+set_target_properties(colorrange PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+install(TARGETS regions trocaregioes video-tons-cinza video-negativo filestorage-senoides colormap colorrange)

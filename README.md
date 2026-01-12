@@ -10,7 +10,7 @@ de compilação**
 
 ## Conteúdo
 
-### Parte 1 - Representação e Manipulação de Imagens
+### Parte I - Representação e Manipulação de Imagens
 
 #### Capítulo 1 - Conceitos iniciais
 
@@ -76,7 +76,7 @@ de compilação**
 - Visualizar o padrão salvo em um arquivo PNG
 - O padrão foi resultado da substração de duas senoides perpendiculares
 
-### Parte 2 - Processamento de Imagens Coloridas
+### Parte II - Processamento de Imagens Coloridas
 
 #### Capítulo 6 - Colorizando imagens cinzentas com mapas de cores (colormaps)
 
@@ -106,3 +106,8 @@ de compilação**
 - O objetivo dessa lição é apresentar como selecionar pixels em uma imagem colorida que se situam em uma faixa de cores fornecida
 - Este exemplo abre uma imagem fornecida e permite ao usuário selecionar interativamente um retângulo onde haverá a seleção da faixa de cores
 - Ainda, são exploradas função que implementam a manipulação de eventos do mouse em uma janela com a função `cv::setMouseCallback`, a função `cv::Rect` para definir ROI (Região de Interesse) e a função `cv::inRange` para selecionar pixels dentro de uma faixa de cores específica
+
+[![Exercicio](https://img.shields.io/badge/Exercicio-yellow?style=flat-square)](./exercicios/colorrange.cpp) **Selecionando regiões de cores complexas**
+
+- Exercício para criar um programa que permita ao usuário selecionar regiões de cores complexas em uma imagem colorida
+- Um brush circular é utilizado para adicionar ou remover pixels da seleção
